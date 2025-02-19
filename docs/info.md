@@ -18,3 +18,5 @@ Counting is performed on the count[3:0] output pins automatically when the power
 ## External hardware
 
 A signal generator is required in case it is an asynchronous counter.
+
+![Diagrama sin título](https://github.com/user-attachments/assets/324f95f6-93da-44aa-a387-9a47de463f22)
