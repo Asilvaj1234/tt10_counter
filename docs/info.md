@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+The project is a 4-bit asynchronous up/down counter, at clk an external clock pulse is provided, it has a reset input pin, also an up(0)/down(1) count select input pin and 4 output pins.
 
 ## How to test
 
-Explain how to use your project
+Counting is performed on the count[3:0] output pins automatically when the power is on, the reset input sets the count to zero and the select input controls the counting direction on the output pins.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+A signal generator is required in case it is an asynchronous counter.
