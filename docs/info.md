@@ -20,3 +20,5 @@ Counting is performed on the count[3:0] output pins automatically when the power
 A signal generator is required in case it is an asynchronous counter.
 
 ![Diagrama sin título](https://github.com/user-attachments/assets/324f95f6-93da-44aa-a387-9a47de463f22)
+
+![single_to_differential](https://github.com/user-attachments/assets/b1194aca-743d-4160-b78a-0efcb5cf908d)
