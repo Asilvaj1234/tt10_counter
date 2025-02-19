@@ -16,7 +16,7 @@ module tt_um_counter (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-    counter #(bits(4)) c (
+    counter #(.bits(4)) c (
         .clk(clk),
         .rst(rst_n),
         .select(ui_in[0]),
