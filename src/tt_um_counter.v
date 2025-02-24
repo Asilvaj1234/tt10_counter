@@ -18,7 +18,7 @@ module tt_um_counter (
 
     counter #(.bits(4)) c (
         .clk(clk),
-        .rst(rst_n),
+        .rst(~rst_n),
         .select(ui_in[0]),
         .count(uo_out[3:0])
     );  
