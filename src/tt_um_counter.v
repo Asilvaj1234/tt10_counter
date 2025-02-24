@@ -19,16 +19,16 @@ module tt_um_counter (
     counter #(.bits(4)) c (
         .clk(clk),
         .rst(~rst_n),
-        .select(ui_in[0]),
-        .count(uo_out[3:0])
+        .select(uio_in[4]),
+        .count(uio_out[3:0])
     );  
     
   // All output pins must be assigned. If not used, assign to 0.
-    assign uo_out[7:4] = 4'b0000;
-    assign uio_out[7:0] = 8'b00000000;
+    assign uo_out[7:0] = 8'b00000000;
+    assign uio_out[7:5] = 3'b000;
     assign uio_oe[7:0] = 8'b11111111;
     
   // List all unused inputs to prevent warnings
-    wire _unused = &{ui_in[7:1], uio_in[7:0], ena, rst_n};
+    wire _unused = &{ui_in[7:0], uio_in[7:5], ena,};
 
 endmodule
