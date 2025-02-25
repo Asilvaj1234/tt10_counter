@@ -25,7 +25,7 @@ module tt_um_counter (
     
   // All output pins must be assigned. If not used, assign to 0.
     assign uo_out[7:0] = 8'b00000000;
-    assign uio_out[7:4] = 3'b000;
+    assign uio_out[7:4] = 4'b0000;
     assign uio_oe[7:0] = 8'b11111111;
     
   // List all unused inputs to prevent warnings
