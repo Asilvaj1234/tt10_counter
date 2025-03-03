@@ -24,7 +24,7 @@ module tt_um_counter (
     );
 
   // All output pins must be assigned. If not used, assign to 0.
-    assign uo_out[4:7]  = 4'b0000;  // Example: ou_out is the sum of ui_in and uio_in
+    assign uo_out[7:4]  = 4'b0000;  // Example: ou_out is the sum of ui_in and uio_in
     assign uio_out[7:0] = 8'b00000000;
     assign uio_oe[7:0]  = 8'b00000000;
 
